@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <main>
+        <section id="display">
+            <div id="expression"></div>
+            <div id="result"></div>
+        </section>
+        <section id="controls">
+            <div id="mode-controls">
+                <input type="button" value="FRAÇÃO">
+                <input type="button" value="DECIMAL">
+            </div>
+            <div id="other-controls">
+                <button class="operator" id="nth-root" type="button">ˣ√</button>
+                <button class="operator" id="potentiation" type="button">□ˣ</button>
+                <button class="operator" id="percentage" type="button">%</button>
+                <button id="percentage" type="button">C</button>
+                <button id="percentage" type="button">⌫</button>
+
+                <input class="numeric" type="button" value="1">
+                <input class="numeric" type="button" value="2">
+                <input class="numeric" type="button" value="3">
+                <input class="operator" type="button" value="+">
+                <input class="operator" type="button" value="-">
+
+                <input class="numeric" type="button" value="4">
+                <input class="numeric" type="button" value="5">
+                <input class="numeric" type="button" value="6">
+                <input class="operator" type="button" value="*">
+                <input class="operator" type="button" value="/">
+
+                <input class="numeric" type="button" value="7">
+                <input class="numeric" type="button" value="8">
+                <input class="numeric" type="button" value="9">
+                <input class="operator" type="button" value="(">
+                <input class="operator" type="button" value=")">
+
+                <button type="button">-/+</button>
+                <input class="numeric" type="button" value="0">
+                <input type="button" value=".">
+                <button id="equal-btn" type="button">=</button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

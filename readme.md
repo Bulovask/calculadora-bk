@@ -1,4 +1,4 @@
-# Calculadora
+# Calculadora BK
 ## Objetivo
 Criar uma calculadora web simples que possa auxiliar na resolução de expressões matemáticas simples, mas não tão simples, será aceito potenciação, porcentagem, radiciação, agrupamento de operações usando parênteses e as próprias operações mais básicas, adição, subtração, multiplicação e divisão.
 
@@ -23,4 +23,7 @@ Caso o usuário digite a expressão `75 / 100` no campo de resultado irá aparec
 
 Acesse o link a seguir para ver a calculadora em funcionamento:
 
-[Calculadora - Não implementado](https://github.com/bulovask)
+[Calculadora BK](https://bulovask.github.io/calculadora-bk/)
+
+## Histórico de desenvolvimento
+- 21/03/2024: Projeto criado - O esboço da calculadora foi criado, já com o visor e com os controles, as cores, dimensões e símbolos não são definitivos, sujeito a mudanças em atualizações futuras.

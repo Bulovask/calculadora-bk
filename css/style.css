@@ -1,0 +1,61 @@
+main {
+    width: min-content;
+}
+
+input, button {
+    border: none;
+    font-size: 25px;
+}
+
+input:active, button:active {
+    filter: brightness(50%);
+}
+
+#display {
+    background-color: darkgreen;
+    height: 70px;
+    width: 100%;
+}
+
+#controls {
+    --size-button: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    width: min-content;
+
+    background-color: #005f8b;
+}
+
+#mode-controls {
+    display: flex;
+    gap: 1px;
+}
+
+#mode-controls input {
+    font-size: 16px;
+}
+
+#other-controls {
+    display: grid;
+    gap: 1px;
+
+    grid-template-columns: repeat(5, var(--size-button));
+    grid-template-rows: repeat(5, var(--size-button));
+}
+
+#equal-btn {
+    grid-column-start: 4;
+    grid-column-end: 6;
+    background-color: yellow;
+    color: #f00;
+}
+
+.numeric {
+    background-color: aqua;
+}
+
+.operator {
+    background-color: brown;
+    color: aliceblue;
+}
