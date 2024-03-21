@@ -1,10 +1,33 @@
+:root {
+    --color1: #000;
+    --color2: #ccc;
+    --color3: #933;
+    --color4: #335;
+    --color5: #ddf;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
 main {
     width: min-content;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 5px;
+    background-color: var(--color2);
 }
 
 input, button {
     border: none;
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: 500;
 }
 
 input:active, button:active {
@@ -12,28 +35,41 @@ input:active, button:active {
 }
 
 #display {
-    background-color: darkgreen;
-    height: 70px;
+    background-color: var(--color5);
+    color: var(--color1);
+    font-size: 34px;
+    height: 100px;
     width: 100%;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#result {
+    text-align: end;
 }
 
 #controls {
-    --size-button: 50px;
+    --size-button: 70px;
     display: flex;
     flex-direction: column;
     gap: 1px;
     width: min-content;
 
-    background-color: #005f8b;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
 }
 
 #mode-controls {
     display: flex;
     gap: 1px;
+    justify-content: space-around;
 }
 
 #mode-controls input {
-    font-size: 16px;
+    font-size: 20px;
+    padding: 5px;
+    flex-grow: 1;
 }
 
 #other-controls {
@@ -47,15 +83,15 @@ input:active, button:active {
 #equal-btn {
     grid-column-start: 4;
     grid-column-end: 6;
-    background-color: yellow;
-    color: #f00;
+    background-color: var(--color3);
+    color: var(--color2);
 }
 
 .numeric {
-    background-color: aqua;
+    background-color: var(--color5);
 }
 
 .operator {
-    background-color: brown;
-    color: aliceblue;
+    background-color: var(--color4);
+    color: var(--color5);
 }

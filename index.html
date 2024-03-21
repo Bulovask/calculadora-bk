@@ -10,20 +10,20 @@
 <body>
     <main>
         <section id="display">
-            <div id="expression"></div>
-            <div id="result"></div>
+            <div id="expression">5+4</div>
+            <div id="result">9</div>
         </section>
         <section id="controls">
             <div id="mode-controls">
-                <input type="button" value="FRAÇÃO">
-                <input type="button" value="DECIMAL">
+                <input class="operator" type="button" value="FRAÇÃO">
+                <input class="operator" type="button" value="DECIMAL">
             </div>
             <div id="other-controls">
-                <button class="operator" id="nth-root" type="button">ˣ√</button>
-                <button class="operator" id="potentiation" type="button">□ˣ</button>
-                <button class="operator" id="percentage" type="button">%</button>
-                <button id="percentage" type="button">C</button>
-                <button id="percentage" type="button">⌫</button>
+                <button id="nth-root"     class="operator" type="button">ˣ√</button>
+                <button id="potentiation" class="operator" type="button">□ˣ</button>
+                <button id="percentage"   class="operator" type="button">%</button>
+                <button id="percentage"   class="operator" type="button">C</button>
+                <button id="percentage"   class="operator" type="button">⌫</button>
 
                 <input class="numeric" type="button" value="1">
                 <input class="numeric" type="button" value="2">
@@ -43,9 +43,9 @@
                 <input class="operator" type="button" value="(">
                 <input class="operator" type="button" value=")">
 
-                <button type="button">-/+</button>
+                <button class="numeric" type="button">-/+</button>
                 <input class="numeric" type="button" value="0">
-                <input type="button" value=".">
+                <input class="numeric" type="button" value=".">
                 <button id="equal-btn" type="button">=</button>
             </div>
         </section>
