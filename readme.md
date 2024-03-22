@@ -27,3 +27,4 @@ Acesse o link a seguir para ver a calculadora em funcionamento:
 
 ## Histórico de desenvolvimento
 - 21/03/2024: Projeto criado - O esboço da calculadora foi criado, já com o visor e com os controles, as cores, dimensões e símbolos não são definitivos, sujeito a mudanças em atualizações futuras.
+- 21/03/2024: Adicionando JavaScript - 

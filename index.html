@@ -10,8 +10,8 @@
 <body>
     <main>
         <section id="display">
-            <div id="expression">5+4</div>
-            <div id="result">9</div>
+            <div id="expression"></div>
+            <div id="result"></div>
         </section>
         <section id="controls">
             <div id="mode-controls">
@@ -19,36 +19,38 @@
                 <input class="operator" type="button" value="DECIMAL">
             </div>
             <div id="other-controls">
-                <button id="nth-root"     class="operator" type="button">ˣ√</button>
-                <button id="potentiation" class="operator" type="button">□ˣ</button>
-                <button id="percentage"   class="operator" type="button">%</button>
-                <button id="percentage"   class="operator" type="button">C</button>
-                <button id="percentage"   class="operator" type="button">⌫</button>
+                <button id="nth-root-btn"     class="operator" type="button">ˣ√</button>
+                <button id="potentiation-btn" class="operator" type="button">□ˣ</button>
+                <button id="percentage-btn"   class="operator" type="button">%</button>
+                <button id="clear-btn"        class="operator" type="button">C</button>
+                <button id="delete-btn"       class="operator" type="button">⌫</button>
 
-                <input class="numeric" type="button" value="1">
-                <input class="numeric" type="button" value="2">
-                <input class="numeric" type="button" value="3">
+                <input class="numeric"  type="button" value="1">
+                <input class="numeric"  type="button" value="2">
+                <input class="numeric"  type="button" value="3">
                 <input class="operator" type="button" value="+">
                 <input class="operator" type="button" value="-">
 
-                <input class="numeric" type="button" value="4">
-                <input class="numeric" type="button" value="5">
-                <input class="numeric" type="button" value="6">
+                <input class="numeric"  type="button" value="4">
+                <input class="numeric"  type="button" value="5">
+                <input class="numeric"  type="button" value="6">
                 <input class="operator" type="button" value="*">
                 <input class="operator" type="button" value="/">
 
-                <input class="numeric" type="button" value="7">
-                <input class="numeric" type="button" value="8">
-                <input class="numeric" type="button" value="9">
+                <input class="numeric"  type="button" value="7">
+                <input class="numeric"  type="button" value="8">
+                <input class="numeric"  type="button" value="9">
                 <input class="operator" type="button" value="(">
                 <input class="operator" type="button" value=")">
 
-                <button class="numeric" type="button">-/+</button>
+                <button id="change-signal-btn" class="numeric" type="button">-/+</button>
                 <input class="numeric" type="button" value="0">
                 <input class="numeric" type="button" value=".">
                 <button id="equal-btn" type="button">=</button>
             </div>
         </section>
     </main>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
