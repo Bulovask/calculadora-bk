@@ -84,6 +84,7 @@ input:active, button:active {
     display: flex;
     justify-content: space-between;
     gap: 1px;
+    justify-content: space-around;
 }
 
 #mode-controls input {
