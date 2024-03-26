@@ -3,50 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Calculadora Aritmética</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <main>
+        <h1>Calculadora Aritmética</h1>
         <section id="display">
-            <div id="expression"></div>
-            <div id="result"></div>
+            <div id="expression">&ThinSpace;5+6</div>
+            <div id="result">&ThinSpace;11</div>
         </section>
         <section id="controls">
             <div id="mode-controls">
-                <input type="button" value="FRAÇÃO">
-                <input type="button" value="DECIMAL">
+                <input class="controls-emphasis" type="button" value="FRAÇÃO">
+                <input class="controls-emphasis" type="button" value="DECIMAL">
+                <input id="fullscreen-btn" class="controls-emphasis" type="button" value="TELA CHEIA">
             </div>
             <div id="other-controls">
-                <button class="operator" id="nth-root" type="button">ˣ√</button>
-                <button class="operator" id="potentiation" type="button">□ˣ</button>
-                <button class="operator" id="percentage" type="button">%</button>
-                <button id="percentage" type="button">C</button>
-                <button id="percentage" type="button">⌫</button>
+                <button class="controls-emphasis" id="nth-root" type="button">ˣ√</button>
+                <button class="controls-emphasis" id="potentiation" type="button">□ˣ</button>
+                <button class="controls-emphasis" id="percentage" type="button">%</button>
+                <button class="controls-emphasis" id="percentage" type="button">C</button>
+                <button class="controls-emphasis" id="percentage" type="button">⌫</button>
 
-                <input class="numeric" type="button" value="1">
-                <input class="numeric" type="button" value="2">
-                <input class="numeric" type="button" value="3">
-                <input class="operator" type="button" value="+">
-                <input class="operator" type="button" value="-">
+                <input class="controls" type="button" value="1">
+                <input class="controls" type="button" value="2">
+                <input class="controls" type="button" value="3">
+                <input class="controls-emphasis" type="button" value="+">
+                <input class="controls-emphasis" type="button" value="-">
 
-                <input class="numeric" type="button" value="4">
-                <input class="numeric" type="button" value="5">
-                <input class="numeric" type="button" value="6">
-                <input class="operator" type="button" value="*">
-                <input class="operator" type="button" value="/">
+                <input class="controls" type="button" value="4">
+                <input class="controls" type="button" value="5">
+                <input class="controls" type="button" value="6">
+                <input class="controls-emphasis" type="button" value="*">
+                <input class="controls-emphasis" type="button" value="/">
 
-                <input class="numeric" type="button" value="7">
-                <input class="numeric" type="button" value="8">
-                <input class="numeric" type="button" value="9">
-                <input class="operator" type="button" value="(">
-                <input class="operator" type="button" value=")">
+                <input class="controls" type="button" value="7">
+                <input class="controls" type="button" value="8">
+                <input class="controls" type="button" value="9">
+                <input class="controls-emphasis" type="button" value="(">
+                <input class="controls-emphasis" type="button" value=")">
 
-                <button type="button">-/+</button>
-                <input class="numeric" type="button" value="0">
-                <input type="button" value=".">
-                <button id="equal-btn" type="button">=</button>
+                <button class="controls" type="button">-/+</button>
+                <input class="controls" type="button" value="0">
+                <input class="controls" type="button" value=".">
+                <button class="controls-emphasis" id="equal-btn" type="button">=</button>
             </div>
         </section>
     </main>

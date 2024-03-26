@@ -1,39 +1,94 @@
+:root {
+    --display-fg-color: #fff;
+    --display-bg-color: #345;
+    --screen-bg-color: #123;
+    --main-bg-color: #789;
+    --controls-bg-color: #567;
+    --controls-fg-color: #000;
+    --controls-emphasis-bg-color: #abc;
+    --controls-emphasis-fg-color: #000;
+
+    --size-button: 50px;
+    --main-padding: 5px;
+    --display-padding: 3px;
+    --button-font-size: 25px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--screen-bg-color);
+}
+
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: calc(var(--main-padding) / 2);
     width: min-content;
+    padding: var(--main-padding);
+    background-color: var(--main-bg-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: calc(var(--button-font-size) / 1.5);
+    text-align: center;
+    font-family: monospace;
+    user-select: none;
 }
 
 input, button {
     border: none;
-    font-size: 25px;
+    font-size: var(--button-font-size);
 }
 
 input:active, button:active {
-    filter: brightness(50%);
+    filter: brightness(90%);
 }
 
 #display {
-    background-color: darkgreen;
-    height: 70px;
+    background-color: var(--display-bg-color);
+    color: var(--display-fg-color);
+    font-size: var(--button-font-size);
+    font-family: monospace;
+    padding: var(--display-padding);
+    box-sizing: border-box;
+    min-height: min-content;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#result {
+    text-align: end;
 }
 
 #controls {
-    --size-button: 50px;
     display: flex;
     flex-direction: column;
     gap: 1px;
     width: min-content;
-
-    background-color: #005f8b;
 }
 
 #mode-controls {
     display: flex;
+    justify-content: space-between;
     gap: 1px;
 }
 
 #mode-controls input {
-    font-size: 16px;
+    font-size: calc(var(--button-font-size) / 2);
+    flex-grow: 1;
 }
 
 #other-controls {
@@ -47,15 +102,54 @@ input:active, button:active {
 #equal-btn {
     grid-column-start: 4;
     grid-column-end: 6;
-    background-color: yellow;
-    color: #f00;
+    font-size: calc(var(--button-font-size) * 1.5);
 }
 
-.numeric {
-    background-color: aqua;
+.controls {
+    background-color: var(--controls-bg-color);
+    color: var(--controls-fg-color);
 }
 
-.operator {
-    background-color: brown;
-    color: aliceblue;
+.controls-emphasis {
+    background-color: var(--controls-emphasis-bg-color);
+    color: var(--controls-emphasis-fg-color);
+}
+
+@media screen and (max-width: 280px), (max-height: 368px) {
+    :root {
+        --size-button: 40px;
+        --button-font-size: 20px;
+    }
+
+    main {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    #display {
+        flex-grow: 1;
+    }
+
+    #controls {
+        width: 100%;
+        flex-grow: 3;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #other-controls {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-height: 368px) {
+    :root {
+        --button-font-size: 16px;
+        --main-padding: 1px;
+    }
 }
